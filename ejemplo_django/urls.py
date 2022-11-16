@@ -1,10 +1,10 @@
 from django.contrib import admin
 from django.urls import path
-from familia_data.views import FamilyDataViews
+from ejemplo_django.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', FamilyDataViews)
+    path('alumnos/', lista_alumnos)
 ]
 
 
