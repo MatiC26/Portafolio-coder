@@ -1,5 +1,5 @@
 from django.template import Template
-from django import Context
+# from django import Context
 from http import HttpResponse
 
 def lista_alumnos(request):
@@ -13,9 +13,9 @@ def lista_alumnos(request):
     
     datos = {"tecnologia": "Python", "listado_alumnos": listado_alumnos }
     
-    contexto = Context(datos) 
+    # contexto = Context(datos) 
     
-    documento = plantilla.render(contexto)
+    # documento = plantilla.render(contexto)
     
-    return HttpResponse(documento)
+    # return HttpResponse(documento)
     
